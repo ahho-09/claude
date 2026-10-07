@@ -89,3 +89,25 @@
 
   requestAnimationFrame(render);
 })();
+
+// Product card image galleries: click a thumbnail to swap the main image
+(function () {
+  "use strict";
+  document.querySelectorAll(".product-card").forEach(function (card) {
+    var mainImg = card.querySelector(".product-card__img img");
+    var thumbs = card.querySelectorAll(".thumb");
+    thumbs.forEach(function (thumb) {
+      thumb.addEventListener("click", function (e) {
+        e.preventDefault();
+        var src = thumb.getAttribute("data-src");
+        if (!src || !mainImg) return;
+        mainImg.style.opacity = "0";
+        window.setTimeout(function () {
+          mainImg.src = src;
+          mainImg.style.opacity = "1";
+        }, 120);
+        thumbs.forEach(function (t) { t.classList.toggle("is-active", t === thumb); });
+      });
+    });
+  });
+})();
