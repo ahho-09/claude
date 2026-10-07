@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cocoon — Plaids & couvertures en velours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="#" class="logo">Cocoon</a>
+    <nav class="nav">
+      <a href="#boutique">Boutique</a>
+      <a href="#couleurs">Couleurs</a>
+      <a href="#apropos">À propos</a>
+    </nav>
+    <a href="#boutique" class="btn btn--ghost">Voir la boutique</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="assets/img/hero.webp" alt="Plaid en velours marron posé sur un canapé beige, lumière d'hiver" class="hero__img">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="eyebrow">Collection Hiver</p>
+      <h1>Le cocooning d'hiver,<br>livré chez vous</h1>
+      <p class="hero__text">Plaids, couvertures et draps en velours — doux, chauds, et pensés pour les soirées d'hiver.</p>
+      <a href="#boutique" class="btn btn--primary">Découvrir la collection</a>
+    </div>
+  </section>
+
+  <!-- COULEURS : cercle -> explosion -> révélation au scroll -->
+  <section class="color-reveal" id="couleurs">
+    <div class="color-reveal__sticky">
+      <div class="container color-reveal__intro">
+        <p class="eyebrow">6 coloris</p>
+        <h2 id="colorHeading">Une teinte pour chaque intérieur</h2>
+      </div>
+      <div class="color-circle" id="colorCircle">
+        <figure class="color-circle__item" data-color="Marron Chocolat">
+          <img src="assets/img/colors/marron.jpg" alt="Plaid velours marron chocolat">
+          <figcaption>Marron Chocolat</figcaption>
+        </figure>
+        <figure class="color-circle__item" data-color="Mauve Lavande">
+          <img src="assets/img/colors/mauve.jpg" alt="Plaid velours mauve lavande">
+          <figcaption>Mauve Lavande</figcaption>
+        </figure>
+        <figure class="color-circle__item" data-color="Rose Poudré">
+          <img src="assets/img/colors/rose.jpg" alt="Plaid velours rose poudré">
+          <figcaption>Rose Poudré</figcaption>
+        </figure>
+        <figure class="color-circle__item" data-color="Gris Perle">
+          <img src="assets/img/colors/gris.jpg" alt="Plaid velours gris perle">
+          <figcaption>Gris Perle</figcaption>
+        </figure>
+        <figure class="color-circle__item" data-color="Blanc Ivoire">
+          <img src="assets/img/colors/blanc.jpg" alt="Plaid velours blanc ivoire">
+          <figcaption>Blanc Ivoire</figcaption>
+        </figure>
+        <figure class="color-circle__item" data-color="Bleu Marine">
+          <img src="assets/img/colors/bleu.jpg" alt="Plaid velours bleu marine">
+          <figcaption>Bleu Marine</figcaption>
+        </figure>
+      </div>
+      <p class="color-reveal__hint" id="scrollHint">Continuez à scroller ↓</p>
+    </div>
+  </section>
+
+  <!-- BOUTIQUE -->
+  <section class="shop" id="boutique">
+    <div class="container">
+      <p class="eyebrow">La collection</p>
+      <h2>Choisissez votre coloris</h2>
+      <div class="shop-grid">
+        <article class="product-card" data-color="Marron Chocolat">
+          <div class="product-card__img">
+            <img src="assets/img/products/marron/1-packshot.jpg" alt="Plaid velours marron chocolat">
+          </div>
+          <div class="product-card__thumbs">
+            <button class="thumb is-active" data-src="assets/img/products/marron/1-packshot.jpg"><img src="assets/img/products/marron/1-packshot.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/marron/2-lifestyle.jpg"><img src="assets/img/products/marron/2-lifestyle.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/marron/3-lifestyle.jpg"><img src="assets/img/products/marron/3-lifestyle.jpg" alt=""></button>
+          </div>
+          <h3>Marron Chocolat</h3>
+          <p class="product-card__meta">Gaufré nid d'abeille — 200x230cm</p>
+          <a href="#" class="btn btn--outline">Voir le produit</a>
+        </article>
+        <article class="product-card" data-color="Mauve Lavande">
+          <div class="product-card__img">
+            <img src="assets/img/products/mauve/1-lifestyle.jpg" alt="Plaid velours mauve lavande">
+          </div>
+          <div class="product-card__thumbs">
+            <button class="thumb is-active" data-src="assets/img/products/mauve/1-lifestyle.jpg"><img src="assets/img/products/mauve/1-lifestyle.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/mauve/2-lifestyle.jpg"><img src="assets/img/products/mauve/2-lifestyle.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/mauve/3-packshot.jpg"><img src="assets/img/products/mauve/3-packshot.jpg" alt=""></button>
+          </div>
+          <h3>Mauve Lavande</h3>
+          <p class="product-card__meta">Gaufré nid d'abeille — 200x230cm</p>
+          <a href="#" class="btn btn--outline">Voir le produit</a>
+        </article>
+        <article class="product-card" data-color="Rose Poudré">
+          <div class="product-card__img">
+            <img src="assets/img/products/rose/1-packshot.jpg" alt="Plaid velours rose poudré">
+          </div>
+          <div class="product-card__thumbs">
+            <button class="thumb is-active" data-src="assets/img/products/rose/1-packshot.jpg"><img src="assets/img/products/rose/1-packshot.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/rose/2-lifestyle.jpg"><img src="assets/img/products/rose/2-lifestyle.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/rose/3-lifestyle.jpg"><img src="assets/img/products/rose/3-lifestyle.jpg" alt=""></button>
+          </div>
+          <h3>Rose Poudré</h3>
+          <p class="product-card__meta">Gaufré nid d'abeille — 200x230cm</p>
+          <a href="#" class="btn btn--outline">Voir le produit</a>
+        </article>
+        <article class="product-card" data-color="Gris Perle">
+          <div class="product-card__img">
+            <img src="assets/img/products/gris/1-packshot.jpg" alt="Plaid velours gris perle">
+          </div>
+          <div class="product-card__thumbs">
+            <button class="thumb is-active" data-src="assets/img/products/gris/1-packshot.jpg"><img src="assets/img/products/gris/1-packshot.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/gris/2-lifestyle.jpg"><img src="assets/img/products/gris/2-lifestyle.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/gris/3-lifestyle.jpg"><img src="assets/img/products/gris/3-lifestyle.jpg" alt=""></button>
+          </div>
+          <h3>Gris Perle</h3>
+          <p class="product-card__meta">Gaufré / tricot côtelé — 200x230cm</p>
+          <a href="#" class="btn btn--outline">Voir le produit</a>
+        </article>
+        <article class="product-card" data-color="Blanc Ivoire">
+          <div class="product-card__img">
+            <img src="assets/img/products/blanc/1-packshot.jpg" alt="Plaid velours blanc ivoire">
+          </div>
+          <div class="product-card__thumbs">
+            <button class="thumb is-active" data-src="assets/img/products/blanc/1-packshot.jpg"><img src="assets/img/products/blanc/1-packshot.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/blanc/2-lifestyle.jpg"><img src="assets/img/products/blanc/2-lifestyle.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/blanc/3-lifestyle.jpg"><img src="assets/img/products/blanc/3-lifestyle.jpg" alt=""></button>
+          </div>
+          <h3>Blanc Ivoire</h3>
+          <p class="product-card__meta">Tricot chenille épais — 200x230cm</p>
+          <a href="#" class="btn btn--outline">Voir le produit</a>
+        </article>
+        <article class="product-card" data-color="Bleu Marine">
+          <div class="product-card__img">
+            <img src="assets/img/products/bleu/1-packshot.jpg" alt="Plaid velours bleu marine">
+          </div>
+          <div class="product-card__thumbs">
+            <button class="thumb is-active" data-src="assets/img/products/bleu/1-packshot.jpg"><img src="assets/img/products/bleu/1-packshot.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/bleu/2-lifestyle.jpg"><img src="assets/img/products/bleu/2-lifestyle.jpg" alt=""></button>
+            <button class="thumb" data-src="assets/img/products/bleu/3-lifestyle.jpg"><img src="assets/img/products/bleu/3-lifestyle.jpg" alt=""></button>
+          </div>
+          <h3>Bleu Marine</h3>
+          <p class="product-card__meta">Tricot chenille torsadé — 200x230cm</p>
+          <a href="#" class="btn btn--outline">Voir le produit</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section class="about" id="apropos">
+    <div class="container about__inner">
+      <p class="eyebrow">Notre matière</p>
+      <h2>Le velours, pensé pour l'hiver</h2>
+      <p>Chaque pièce est choisie pour sa douceur et sa chaleur. Nos plaids et couvertures habillent votre intérieur d'une ambiance cocooning, dans des tons marron, beige et crème qui traversent les saisons sans jamais se démoder.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <span>© Cocoon — tous droits réservés</span>
+    <nav>
+      <a href="#">Mentions légales</a>
+      <a href="#">CGV</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
